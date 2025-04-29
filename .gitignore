@@ -4,6 +4,7 @@ obj/
 
 # IDE files
 .vscode/
+.vs/
 *.sln.user
 
 # macOS files

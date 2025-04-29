@@ -17,7 +17,7 @@ public class Journey
     private Journey() { }
 
     public Journey(int id, BusLocation origin, BusLocation destination, string originTerminalName, string destinationTerminalName,
-                   DateTime departureTime, DateTime arrivalTime, decimal price,
+                   DateTime departureTime, DateTime arrivalTime, decimal price
                    )
     {
         Id = id;
@@ -36,7 +36,7 @@ public class Journey
     public void ValidateLocations()
     {
         if (Origin.Id == Destination.Id)
-            throw new InvalidOperationException("Origin and destination cannot be the same.");
+            throw new ArgumentOutOfRangeException("Origin and destination cannot be the same.");
     }
 
     public void ValidateTimes()
